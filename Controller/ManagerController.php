@@ -12,7 +12,7 @@
 namespace ONGR\FilterManagerBundle\Controller;
 
 use ONGR\FilterManagerBundle\DependencyInjection\ONGRFilterManagerExtension;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -20,7 +20,7 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * Class ManagerController.
  */
-class ManagerController extends Controller
+class ManagerController extends AbstractController
 {
     /**
      * Renders view with filter manager response.
